@@ -4,7 +4,426 @@
     box-sizing: border-box;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: 'Abril Fatface';
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    padding: 30px 0;
+}
+
+header{
+    height: 50vh;
+    background-image: linear-gradient(to right, rgb(250, 112, 154) 0%, rgb(254, 225, 64) 100%);
+}
+
+.contenedor-head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    color: seashell;
+}
+
+.menu{
+    z-index: 10;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.548);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgb(255, 154, 158) 0%, rgb(158, 138, 132) 99%, rgb(250, 208, 196) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*transition: transform .3s ease-in-out;*/
+    transform: translate(-110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: seashell;
+    text-decoration: none;
+}
+
+/*Inicio*/
+
+.clases{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 300;
+    color: #fa709a;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #fa709a;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.contenedor-inicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-inicio img{
+    width: 40%;
+}
+
+.lista-beneficios{
+    width: 45%;
+    float: right;
+    font-size: 20px;
+    margin-top: -5%;
+}
+
+.beneficios{
+    margin-bottom: 20px;
+}
+
+.lista{
+    margin-bottom: 7px;
+    color: #fa709a;
+}
+
+.punto{
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba(250, 112, 153, 0.562) 0%, rgba(254, 225, 64, 0.521) 100%);
+    width: 10px;
+    height: 10px;
+    color: seashell;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+.registro-inscripcion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Galería*/
+
+.contenedor-galeria{
+    background: #f2f2f2;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, .5) 0 0 6px;
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+/* Ubicación */
+
+.svg-ubicacion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.calle{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+    margin-top: -60px;
+}
+
+/* Footer */
+
+footer{
+    background: #fa709a;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60%;
+    color: seashell;
+}
+
+.brand{
+    font-size: 40px;
+}
+
+.inscripcion{
+    width: 27%;
+    font-size: 25px;
+    display: inline-block;
+    color: seashell;
+}
+
+.inscripcion:hover{
+    color: #fee140;
+}
+
+.social-media{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid seashell;
+    border-radius: 50%;
+    text-align: center;
+    color: seashell;
+}
+
+.social-media-icon:hover{
+    background: seashell;
+    color: #fa709a;
+}
+
+.social-media-icon i{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* Adaptación a dispositivo móvil 500px*/
+
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .contenedor-head{
+        font-size: 1.5em;
+    }
+
+    .contenedor-inicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .lista-beneficios{
+        width: 80%;
+        padding: 0;
+    }
+
+    .registro-inscripcion{
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .subtitulo{
+        padding-top: 10px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .svg-ubicacion img{
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 10px;
+        width: 50%;
+    }
+
+    iframe{
+        width: 70%;
+    }
+
+    .calle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -60px;
+    }
+
+    .footer-content{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .contact-us{
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .brand{
+        font-size: 30px;
+    }
+    
+    .inscripcion{
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .social-media{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Adaptación a dispositivo móvil 300px */
+
+@media screen and (max-width: 500px){
+    header{
+        height: 40vh;
+    }
+    
+    .contenedor-head{
+        font-size: 20px;
+    }
+    
+    .menu-navegacion{
+        width: 65vw;
+    }
+    
+    /*Inicio*/
+    
+    .clases{
+        font-size: 20px;
+    }
+    
+    .subtitulo{
+        font-size: 20px;
+    }
+    
+    .contenedor-inicio img{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .lista-beneficios{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    
+    .registro-inscripcion{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    /* Galería*/
+    
+    .img-galeria{
+        width: 95%;
+    }
+    
+    .agregar-imagen{
+        width: 95%;
+    }
+    
+    /* Ubicación */
+    
+    .svg-ubicacion img{
+        width: 80%;
+    }
+
+    iframe{
+        width: 95%;
+    }
 }
