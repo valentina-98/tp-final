@@ -40,8 +40,8 @@
                         <h3 class="lista"><span class="punto">·</span> Y un largo etcétera de beneficios...</h3>
                     </div>
                 </div>
-                <div class="registro-inscripcion">
-                    <h1>Registrate y solicitá tu inscripción <a href="#contacto">acá</a></h1>
+                <div class="solicitud-inscripcion">
+                    <h1>Comunicate o solicitá tu inscripción <a href="#contacto">acá</a></h1>
                 </div>
             </div>
         </section>
@@ -79,7 +79,7 @@
             <div class="contact-us">
                 <h2 class="brand">Del Aire Somos</h2>
                 <p>Acorbacia Aérea en Tela</p>
-                <a href="inscripcion" class="inscripcion">Solicitar inscripción</a>
+                <input type="button" value="Inscripción" id="inscription" class="inscription1">
             </div>
             <div class="social-media">
                 <a href="https://www.instagram.com/del.aire.somos/" target="_blank" class="social-media-icon">
@@ -89,9 +89,30 @@
         </div>
     </footer>
 
+    <div class="contenedor-formulario" id="contenedor-form">
+        <form action="" class="formulario" id="formulario1">
+            <h1 class="contactanos">Contactanos</h1>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+            <input type="number" id="edad" name="edad" placeholder="Edad" min="1" max="60">
+            <input type="email" id="mail" name="mail" placeholder="ejemplo@gmail.com">
+            <input type="tel" id="telefono" name="telefono" placeholder="Celular">
+            <textarea name="mensaje" id="mensaje" cols="40" rows="5">Hola! Quiero inscribirme en Del Aire Somos.
+Enviarme información.</textarea>
+            <h4 class="info">Recibir información a través de:</h4>
+            <div class="radio">
+                <label for="e-mail"><input type="radio" id="e-mail" name="medio">E-mail</label>
+                <label for="whatsapp"><input type="radio" id="whatsapp" name="medio">Whatsapp</label>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+        <img src="img/x.svg" class="close" id="cruz">
+    </div>
 
-    
+
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/formulario.js"></script>
+
 </body>
 </html>
