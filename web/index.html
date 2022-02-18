@@ -90,21 +90,14 @@
     </footer>
 
     <div class="contenedor-formulario" id="contenedor-form">
-        <form action="" class="formulario" id="formulario1">
+        <form action="" method="" class="formulario" id="formulario1">
             <h1 class="contactanos">Contactanos</h1>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
-            <input type="number" id="edad" name="edad" placeholder="Edad" min="1" max="60">
-            <input type="email" id="mail" name="mail" placeholder="ejemplo@gmail.com">
-            <input type="tel" id="telefono" name="telefono" placeholder="Celular">
+            <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input required type="text" id="apellido" name="apellido" placeholder="Apellido">
+            <input required type="email" id="mail" name="mail" placeholder="ejemplo@gmail.com">
             <textarea name="mensaje" id="mensaje" cols="40" rows="5">Hola! Quiero inscribirme en Del Aire Somos.
 Enviarme información.</textarea>
-            <h4 class="info">Recibir información a través de:</h4>
-            <div class="radio">
-                <label for="e-mail"><input type="radio" id="e-mail" name="medio">E-mail</label>
-                <label for="whatsapp"><input type="radio" id="whatsapp" name="medio">Whatsapp</label>
-            </div>
-            <input type="submit" value="Enviar">
+            <input type="submit" name="enviar" value="Enviar">
         </form>
         <img src="img/x.svg" class="close" id="cruz">
     </div>
