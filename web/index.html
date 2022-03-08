@@ -90,22 +90,24 @@
     </footer>
 
     <div class="contenedor-formulario" id="contenedor-form">
-        <form action="" method="" class="formulario" id="formulario1">
+        <form method="POST" class="formulario" id="formulario1">
             <h1 class="contactanos">Contactanos</h1>
             <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
             <input required type="text" id="apellido" name="apellido" placeholder="Apellido">
             <input required type="email" id="mail" name="mail" placeholder="ejemplo@gmail.com">
             <textarea name="mensaje" id="mensaje" cols="40" rows="5">Hola! Quiero inscribirme en Del Aire Somos.
 Enviarme información.</textarea>
-            <input type="submit" name="enviar" value="Enviar">
+            <button type="submit">Enviar</button>
         </form>
         <img src="img/x.svg" class="close" id="cruz">
     </div>
 
-
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/formulario.js"></script>
+    <script src="js/dbform.js"></script>
+    <script src="php/enviar.php"></script>
+
 
 </body>
 </html>

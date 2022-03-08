@@ -12,5 +12,3 @@ inscripcion.addEventListener('click', () => {
 cruz.addEventListener('click', () => {
     contenedor.classList.toggle('showForm')
 })
-
-
